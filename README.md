@@ -21,3 +21,8 @@ Aktualnie grę można uruchomić wpisując następujące polecenie w terminalu:
 ```shell
 python -m sp2d
 ```
+
+## Autorzy
+- Kacper Wojciuch
+- Igor Wadas
+- Jarosław Klima
