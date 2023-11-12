@@ -4,6 +4,10 @@ Gra na wzór klasycznej platformówki, gdzie wcielamy się w rolę studenta unik
 
 [Opis projektu na Google Docs](https://docs.google.com/document/d/1EeVCMWkcT_uvYkt4korTGX4QK8c416j7XuzS_09qhwU/edit)
 
+## Licencja projektu
+
+[MIT License](/LICENSE)
+
 ## Jak zagrać?
 
 ### Przygotowanie środowiska
