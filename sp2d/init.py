@@ -1,20 +1,26 @@
 import pygame
 
-def main():
+# constants
 
+G = 15
+V_JUMP = 100
+# screen dimensions
+WIDTH, HEIGHT = 1280, 720
+# player starting position
+BASE_POS_X, BASE_POS_Y = WIDTH * 1 / 5, HEIGHT * 3 / 4
+PLAYER_RADIUS = 40
+
+
+def main():
     # pygame setup
     pygame.init()
-    screen = pygame.display.set_mode((1280, 720))
+    screen = pygame.display.set_mode((WIDTH, HEIGHT))
     clock = pygame.time.Clock()
     running = True
-    dt = 0
-    v = 0
-    G = 2
-    V_JUMP = 40 
-    BASE_POS = screen.get_height() * 2 / 3
+    dt = 0  # delta time
 
-    player_pos = pygame.Vector2(screen.get_width() / 2 - 500, BASE_POS)
-
+    player_v = 0  # velocity
+    player_y = BASE_POS_Y
 
     while running:
         # poll for events
@@ -22,28 +28,20 @@ def main():
             if event.type == pygame.QUIT:
                 running = False
 
-        v -= G*dt
-        player_pos.y = min(player_pos.y - v*dt, BASE_POS) 
+        player_v -= G * dt
+        player_y = min(player_y - player_v * dt, BASE_POS_Y)
 
         keys = pygame.key.get_pressed()
-        if keys[pygame.K_SPACE] and BASE_POS == player_pos.y:
-            v=V_JUMP
-            
-        # if keys[pygame.K_s]:
-        #     player_pos.y += 300 * dt
-        # if keys[pygame.K_a]:
-        #     player_pos.x -= 300 * dt
-        # if keys[pygame.K_d]:
-        #     player_pos.x += 300 * dt
-
-        pygame.display.flip()
-
+        if keys[pygame.K_SPACE] and BASE_POS_Y == player_y:
+            player_v = V_JUMP
 
         screen.fill("black")
         
-        pygame.draw.line(screen, "blue", (0,BASE_POS+42), (screen.get_width(), BASE_POS+42), 4)
-        pygame.draw.circle(screen, "green", player_pos, 40)
+        pygame.draw.line(screen, "blue", (0, BASE_POS_Y + PLAYER_RADIUS), (WIDTH, BASE_POS_Y + PLAYER_RADIUS), 4)
+        pygame.draw.circle(screen, "green", (BASE_POS_X, player_y), PLAYER_RADIUS)
 
-        dt = clock.tick(60) / 10
+        pygame.display.flip()  # update screen
+
+        dt = clock.tick(60) / 100
 
     pygame.quit()
