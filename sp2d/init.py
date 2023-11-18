@@ -32,8 +32,10 @@ def main():
         player_y = min(player_y - player_v * dt, BASE_POS_Y)
 
         keys = pygame.key.get_pressed()
-        if keys[pygame.K_SPACE] and BASE_POS_Y == player_y:
+        if (keys[pygame.K_SPACE] or keys[pygame.K_UP]) and BASE_POS_Y == player_y:
             player_v = V_JUMP
+        if keys[pygame.K_F11]:
+            pygame.display.toggle_fullscreen()
 
         screen.fill("black")
         
