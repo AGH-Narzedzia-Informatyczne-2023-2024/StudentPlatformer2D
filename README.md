@@ -3,11 +3,7 @@
 ## UWAGA!
 ### Ten branch służy jedynie zaprezentowaniu umiejętności tworzenia i rozwiązywania konfliktów w Gicie.
 
-## Licencja projektu
-
-[MIT License](/LICENSE)
-
-## Jak zagrać?
+## Co potrzeba żeby zacząc?
 
 ### Przygotowanie środowiska
 
@@ -30,3 +26,7 @@ py -3.11 -m sp2d
 - Kacper Wojciuch
 - Igor Wadas
 - Jarosław Klima
+
+## Licencja projektu
+
+[MIT License](/LICENSE)
