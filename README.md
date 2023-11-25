@@ -11,18 +11,18 @@
 
 ### Przygotowanie środowiska
 
-Upewnij się, że masz zainstalowanego **Pythona w wersji ≥ 3.10**.
+Upewnij się, że masz zainstalowanego jak najnowszego Pythona.
 
 Następnie, zainstaluj wymagane biblioteki za pomocą polecenia:
 ```shell
-python -m pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ### Uruchamianie gry
 
 Aktualnie grę można uruchomić wpisując następujące polecenie w terminalu:
 ```shell
-python -m sp2d
+py -m sp2d
 ```
 ## Autorzy
 - Kacper Wojciuch
