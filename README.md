@@ -3,11 +3,7 @@
 ## UWAGA!
 ### Ten branch służy jedynie zaprezentowaniu umiejętności tworzenia i rozwiązywania konfliktów w Gicie.
 
-## Licencja projektu
-
-[MIT License](/LICENSE)
-
-## Jak zagrać?
+## Jak ropocząć rozgrywkę?
 
 ### Przygotowanie środowiska
 
@@ -26,6 +22,11 @@ Aktualnie grę można uruchomić wpisując następujące polecenie w terminalu:
 ```shell
 py -3.11 -m sp2d
 ```
+
+## Licencja projektu
+
+[MIT License](/LICENSE)
+
 ## Autorzy
 - Kacper Wojciuch
 - Igor Wadas
