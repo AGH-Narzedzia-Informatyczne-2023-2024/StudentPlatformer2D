@@ -17,14 +17,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt, lorem va
 
 Następnie, zainstaluj wymagane biblioteki za pomocą polecenia:
 ```shell
-python3.11 -m pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ### Uruchamianie gry
 
 Aktualnie grę można uruchomić wpisując następujące polecenie w terminalu:
 ```shell
-python3.11 -m sp2d
+py -3.11 -m sp2d
 ```
 ## Autorzy
 - Kacper Wojciuch
